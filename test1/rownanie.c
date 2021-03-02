@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-
+/*Program nalezy uruchomic z komenda -lm*/
 
 struct TrojmianKw {
   double  a;
@@ -34,7 +34,7 @@ int main() {
   }
 
 
-  printf(" Postac trojmianu kwadratowego: %lfx^2 + %lfx + %lf\n",TKw.a,TKw.b,TKw.c);
+  printf(" Postac trojmianu kwadratowego: %fx^2 + %fx + %f\n",TKw.a,TKw.b,TKw.c);
   
   Delta_2  = (TKw.b*TKw.b) - (4.0*TKw.a*TKw.c);
 
@@ -59,12 +59,12 @@ int main() {
   switch (Ilosc_Pierwiastkow) {
     case 2:
       printf("Istnieja dwa rozwiazania rzeczywiste:\n");
-      printf("  x1 = %lf\n", X1);
-      printf("  x2 = %lf\n", X2);
+      printf("  x1 = %f\n", X1);
+      printf("  x2 = %f\n", X2);
       break;
 
     case 1:
-      printf("Istnieje jedno rozwiazanie: %lf\n", X1);
+      printf("Istnieje jedno rozwiazanie: %f\n", X1);
       break;
 
     case 0:
@@ -74,4 +74,10 @@ int main() {
 
   return 0;
 }
+
+
+
+
+
+/*Aby rozwiazac problem nalezalo w printfach zamienic %lf na %f, poniewaz iso nie wspiera fomatu %lf */
 

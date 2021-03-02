@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 
-extern const double PI;
-extern const double E;
+extern double PI;
+extern double E;
 
 
 int main()

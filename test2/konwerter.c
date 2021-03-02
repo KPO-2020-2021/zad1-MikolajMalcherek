@@ -27,7 +27,7 @@ void KonwertujNapis( char *Napis, int *TabKodow, char *TabZnakow, int Rozmiar)
 int main()
 {
   int  IloscKodow = 10;
-  int  Rozmiar = IloscKodow * sizeof('¶');
+  int  Rozmiar = IloscKodow * sizeof(int);
 
   int  *TabKodow = (int*)malloc(Rozmiar);
   char *TabZnakow = (char*)malloc(IloscKodow*sizeof(char)); 
